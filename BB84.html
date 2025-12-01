@@ -3,7 +3,7 @@
 <!--
 Author: Gina Philipose
 HTML File: BB84.html
-Last Update: November 30th, 2025
+Last Update: December 1st, 2025
 -->
 
 <html lang="en">
@@ -21,8 +21,10 @@ Last Update: November 30th, 2025
             <a href="index.html"><button><h2><b>QKD</b></h2></button></a>
             &emsp;&emsp;&emsp;&emsp;&emsp;
             <a href="BB84.html"><button><h2><b>BB84</b></h2></button></a>
+            <!-- &emsp;&emsp;&emsp;&emsp;&emsp;
+            <a href="E91.html"><button><h2><b>E91</b></h2></button></a> -->
             &emsp;&emsp;&emsp;&emsp;&emsp;
-            <a href="E91.html"><button><h2><b>E91</b></h2></button></a>
+            <a href="ref.html"><button><h2><b>References</b></h2></button></a>
         </div>
     </div>
     <div class="content">
@@ -41,8 +43,8 @@ Last Update: November 30th, 2025
         <canvas id="canvas" width="1000" height="400"></canvas>
 
         <div class="result">
-            <p>Sifted Key: <span id="sift"></span></p>
-            <p>Error Rate: <span id="error"></span></p>
+            <h3>Sifted Key: <span id="sift"></span></h3>
+            <h3>Error Rate: <span id="error"></span></h3>
             
         </div>
         
@@ -52,6 +54,8 @@ Last Update: November 30th, 2025
         <b>Notes: </b>
                 <p>- The error rate here is idealistic as errors can still occur even when Eve isn't present. Bob and Alice can still expect errors but pay attention to how large the error rate is </p> 
                 <p>- This simulation demonstrates a small bit length but in actual practice, billions of bits would be sent and samples (in the thousands to millions) would be used to verify errors </p>
+                <p>- Rectilinear bases (+): vertical (0); horizontal (1)</p>
+                <p>- Diagonal bases (x): 45 degrees top left to bottom right (0); 135 degrees top right to bottom left (1)</p>
     </div>
     
     <script src="BB84script.js"></script>

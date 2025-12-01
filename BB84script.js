@@ -1,3 +1,10 @@
+/*
+Author: Gina Philipose
+HTML File: BB84.script
+Last Update: December 1st, 2025
+*/
+
+
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext('2d');
 
