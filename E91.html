@@ -27,7 +27,32 @@ Last Update: November 30th, 2025
     </div>
     <div class="content">
         <h1>E91</h1>
+        <div class="control">
+            <label>Number of Photons (Qubits)</label>
+            <input type="range" id="qubits" min="3" max="12" value="6">
+            <span id="qubitnum">6</span>
+            <br> 
+            <label><input type="checkbox" id="eve">Include Eve</label>
+            &emsp;&emsp;
+            <button id="run">Run Simulation</button>
+        </div>
+        <br>
+        <canvas id="canvas" width="1000" height="500"></canvas>
+
+        <div class="result">
+            <p>Sifted Key: <span id="sift"></span></p>
+            <p>Error Rate: <span id="error"></span></p>
+            
+        </div>
+        
     </div>
-    <script src="script.js"></script>
+    <br>
+    <div class="notes">
+        <b>Notes: </b>
+                <p>- The error rate here is idealistic as errors can still occur even when Eve isn't present. Bob and Alice can still expect errors but pay attention to how large the error rate is </p> 
+                <p>- This simulation demonstrates a small bit length but in actual practice, billions of bits would be sent and samples (in the thousands to millions) would be used to verify errors </p>
+    </div>
+    
+    <script src="BB84script.js"></script>
 </body>
 </html>
