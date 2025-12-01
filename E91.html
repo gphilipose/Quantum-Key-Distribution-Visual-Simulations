@@ -10,7 +10,7 @@ Last Update: November 30th, 2025
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quantum Key Distribution</title>
+    <title>E91</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -28,15 +28,15 @@ Last Update: November 30th, 2025
     <div class="content">
         <h1>E91</h1>
         <div class="control">
-            <label>Number of Photons (Qubits)</label>
+            <label>Number of Entangled Pairs (Qubits)</label>
             <input type="range" id="qubits" min="3" max="12" value="6">
             <span id="qubitnum">6</span>
             <br> 
             <label><input type="checkbox" id="eve">Include Eve</label>
             &emsp;&emsp;
             <button id="run">Run Simulation</button>
+            <p>Bits: Blue = 0, Red = 1</p>
         </div>
-        <br>
         <canvas id="canvas" width="1000" height="500"></canvas>
 
         <div class="result">
@@ -51,8 +51,9 @@ Last Update: November 30th, 2025
         <b>Notes: </b>
                 <p>- The error rate here is idealistic as errors can still occur even when Eve isn't present. Bob and Alice can still expect errors but pay attention to how large the error rate is </p> 
                 <p>- This simulation demonstrates a small bit length but in actual practice, billions of bits would be sent and samples (in the thousands to millions) would be used to verify errors </p>
+                <p>- The error rate depends on measurement basis alignment and presence of Eve</p>
     </div>
     
-    <script src="BB84script.js"></script>
+    <script src="E91script.js"></script>
 </body>
 </html>
