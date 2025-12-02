@@ -51,13 +51,23 @@ Last Update: December 1st, 2025
     </div>
     <br>
     <div class="notes">
+        <b>Legend: </b>
+                <p>- Sender: Alice</p> 
+                <p>- Receiver: Bob </p>
+                <p>- Circles: Photons / Qubits </p>
+                <p>- Bits: Blue = 0, Red = 1 </p>
+                <p>- Rectilinear bases (+): vertical (0); horizontal (1)</p>
+                <p>- Diagonal bases (x): 45 degrees top left to bottom right (0); 135 degrees top right to bottom left (1)</p>
+                <p>- Faded circles: photons not used for the sifted key as Alice and Bob's bases do not match</p>
+        
+        <br>
         <b>Notes: </b>
                 <p>- The error rate here is idealistic as errors can still occur even when Eve isn't present. Bob and Alice can still expect errors but pay attention to how large the error rate is </p> 
                 <p>- This simulation demonstrates a small bit length but in actual practice, billions of bits would be sent and samples (in the thousands to millions) would be used to verify errors </p>
-                <p>- Rectilinear bases (+): vertical (0); horizontal (1)</p>
                 <p>- Diagonal bases (x): 45 degrees top left to bottom right (0); 135 degrees top right to bottom left (1)</p>
     </div>
     
     <script src="BB84script.js"></script>
 </body>
 </html>
+
