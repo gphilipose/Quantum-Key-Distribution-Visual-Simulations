@@ -1,2 +1,2 @@
 # Quantum-Key-Distribution-Visual-Simulations
-Visual simulations showing how quantum key distribution methods, such as BB85, work.
+Visual simulations showing how quantum key distribution methods, such as BB84, work.
